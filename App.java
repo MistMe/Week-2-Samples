@@ -45,6 +45,35 @@ public class App {
         archer.sayMyAgility();
         archer.sayMyIntelligence();
 
+        Gear helmet = new Gear();
+
+        helmet.name = "Knight's Helmet";
+        helmet.defense = 20;
+        helmet.weight = 9.5f;
+        helmet.rarity = "Rare";
+        helmet.description = "This Helmet have been through many battles over the centuries.";
+        helmet.hasElementalResistance = true;
+        
+        helmet.showMyDescription();
+
+        Enemy skeleton = new Enemy();
+
+        skeleton.damage = 5;
+        skeleton.health = 10;
+        skeleton.armor = 5;
+        skeleton.hasMagicImmunity = false;
+        skeleton.name = "Common Skeleton Warrior";
+        skeleton.enemyDialogue();
+
+        Enemy dragon = new Enemy();
+
+        dragon.damage = 40;
+        dragon.health = 400;
+        dragon.armor = 75;
+        dragon.hasMagicImmunity = false;
+        dragon.name = "Ancient Wyvern";
+        dragon.enemyDialogue();
+
 
     }
 }
